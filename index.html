@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مراسي كافيه | Marasy Cafe</title>
+    <style>
+        :root {
+            --primary-color: #8B0000;
+            --gold-color: #D4AF37;
+            --dark-bg: #121212;
+            --card-bg: #1E1E1E;
+            --text-color: #FFFFFF;
+            --text-muted: #AAAAAA;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('marasy-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 3px solid var(--gold-color);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--gold-color);
+            margin-bottom: 10px;
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .notice-box {
+            background-color: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--gold-color);
+            color: var(--gold-color);
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        .section-title {
+            color: var(--gold-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+            margin: 30px 0 15px 0;
+            font-size: 1.5rem;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .menu-item {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-right: 4px solid var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .item-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .item-price {
+            color: var(--gold-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مراسي كافيه | Marasy Cafe</h1>
+        <p>التجمع الخامس - القاهرة الجديدة | استمتع بأجمل الجلسات والمشروبات</p>
+        <div class="notice-box">
+            ملاحظة هامة: الأسعار قابلة للتغيير، الرجاء الرجوع لإدارة الكافيه للتأكيد.
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- المشروبات الساخنة -->
+        <h2 class="section-title">☕ المشروبات الساخنة</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">شاي ليبتون</span><span class="item-price">15 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">نعناع / ينسون / كركدية</span><span class="item-price">15 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">شاي بحليب</span><span class="item-price">20 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">شاي بالليمون</span><span class="item-price">15 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">براد شاي نعناع</span><span class="item-price">25 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">شاي أخضر / فواكه</span><span class="item-price">15 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">قهوة تركي</span><span class="item-price">20 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">قهوة تركي دبل</span><span class="item-price">25 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">قهوة فرنساوي</span><span class="item-price">25 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">قهوة فرنساوي دبل</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">قهوة بندق</span><span class="item-price">25 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">قهوة بندق دبل</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">نسكافيه</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">نسكافيه نكهات</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">موكا كافيه</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كابتشينو</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كافيه لاتيه</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">أسبرسو</span><span class="item-price">25 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">أسبرسو دبل</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">أمريكان كوفي</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">سحلب</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">سحلب نوتيلا / أوريو / فواكه</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">سحلب سنيكرز</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">هوت شوكلت</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">هوت أوريو</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">مراسي هوت اسبيشال</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">هوت مولتن درينك</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">حمص الشام</span><span class="item-price">25 ج.م</span></div>
+        </div>
+
+        <!-- المشروبات الباردة والميلك شيك -->
+        <h2 class="section-title">🥤 المشروبات الباردة والميلك شيك</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">ميلك شيك نوتيلا</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ميلك شيك أوريو</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ميلك شيك لبان / غزل بنات</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ميلك شيك فانيليا / كاراميل</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ميلك شيك فواكه (مانجو/فراولة/بطيخ/كيوي)</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ميلك شيك كيت كات / مالتيزيرز / سنيكرز</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ميلك شيك مراسي</span><span class="item-price">50 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">آيس كابتشينو / آيس لاتيه</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">آيس شوكلت / آيس موكا</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">فرابيه (كاراميل / شوكلت / فانيليا)</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ايطاليان فربتشينو</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بيبسي / سفن أب / فيروز / شويبس</span><span class="item-price">20 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ريد بول</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">ريد بول فانيليا</span><span class="item-price">50 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">مياه معدنية</span><span class="item-price">10 ج.م</span></div>
+        </div>
+
+        <!-- العصائر الطبيعية والسموزي -->
+        <h2 class="section-title">🍹 العصائر الطبيعية والسموزي</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">عصير ليمون</span><span class="item-price">25 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">عصير ليمون نعناع</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">عصير مانجو / جوافة / برتقال</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">عصير فراولة / بطيخ</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">عصير بلح باللبن / موز باللبن</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">عصير كيوي / كوكتيل</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">سموزي فواكه متنوع</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">سموزي مراسي</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">زبادو سادة</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">زبادو بالعسل</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">زبادو فواكه</span><span class="item-price">40 ج.م</span></div>
+        </div>
+
+        <!-- الكريب -->
+        <h2 class="section-title">🌯 الكريب</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">كريب بطاطس</span><span class="item-price">25 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كريب خضروات</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كريب تشيكن كريسبي / زنجر سبايسي</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كريب هوت دوج / برجر / كفتة</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كريب مشكل جبن</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كريب تشيكن مشروم / فاهيتا / شيش طاووق</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كريب سوبر كرانشي</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">قنبلة مراسي</span><span class="item-price">50 ج.م</span></div>
+        </div>
+
+        <!-- الباستا -->
+        <h2 class="section-title">🍝 الباستا</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">باستا ريد صوص</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">مكرونة كبدة</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">أسباجتي بولونيز مفروم</span><span class="item-price">35 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">باستا وايت صوص مشروم</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">باستا الفريدو</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">فوتشيني الأكريما مشروم + دجاج</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">أسباجتي فونجي دجاج + مشروم</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بينا كوتر وفورماج (4 أنواع جبن)</span><span class="item-price">50 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بينا نجرسكو</span><span class="item-price">50 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">باستا مراسي</span><span class="item-price">55 ج.م</span></div>
+        </div>
+
+        <!-- البيتزا -->
+        <h2 class="section-title">🍕 البيتزا (M / L / XL)</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">بيتزا مارجيتا</span><span class="item-price">50 / 60 / 75 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بيتزا خضروات</span><span class="item-price">55 / 65 / 75 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بيتزا سلامي / فونجي / هوت دوج</span><span class="item-price">60 / 75 / 90 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بيتزا فورماج / بولو / أنشوجة</span><span class="item-price">60 / 75 / 90 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بيتزا تشيكن باربيكيو / تونة</span><span class="item-price">60 / 75 / 90 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بيتزا سوبر سوبريم</span><span class="item-price">60 / 75 / 90 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">بيتزا مراسي</span><span class="item-price">70 / 85 / 100 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">حواوشي إيطالي</span><span class="item-price">50 ج.م</span></div>
+        </div>
+
+        <!-- الحلويات -->
+        <h2 class="section-title">🍰 الحلويات</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">كريب نوتيلا</span><span class="item-price">30 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">آيس كريم مراسي</span><span class="item-price">40 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">كريب فواكة</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">أوريو مادنيس</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">فروت سلاط مراسي</span><span class="item-price">45 ج.م</span></div>
+            <div class="menu-item"><span class="item-name">مولتن كيك</span><span class="item-price">50 ج.م</span></div>
+        </div>
+
+    </div>
+
+    <!-- زر الواتساب العائم للحجز -->
+    <a href="https://wa.me/201000984344?text=مرحباً، أرجو حجز طاولة والاستفسار عن المنيو." class="floating-whatsapp" target="_blank">
+        💬 احجز أو اطلب عبر الواتساب
+    </a>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © مراسي كافيه | التجمع الخامس - القاهرة الجديدة</p>
+    </footer>
+
+</body>
+</html>
