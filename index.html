@@ -515,10 +515,13 @@
     <footer class="bg-black/80 border-t border-marasy-border mt-20 py-8 px-4">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-6 text-center">
             
-            <!-- العمود الأيمن (الفارغ أو مخصص لتوازن التخطيط) -->
-            <div class="hidden md:block"></div>
+            <!-- العمود الأيمن (الظاهر يمين الشاشة في RTL): نحط فيه الـ QR Code -->
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lolototomeme.github.io/MarasyCaffy/" alt="Menu QR Code" class="w-32 h-32 rounded-xl border-2 border-marasy-gold/50 bg-white p-1.5 shadow-lg">
+                <span class="text-xs text-gray-300 font-bold mt-2">امسح المنيو</span>
+            </div>
 
-            <!-- العمود الأوسط: النص الأساسي في منتصف الشاشة -->
+            <!-- العمود الأوسط: النص الأساسي في منتصف الشاشة تماماً -->
             <div class="flex flex-col items-center justify-center">
                 <h3 class="text-marasy-gold font-bold text-lg mb-2">مراسي كافيه | Marasy Cafe</h3>
                 <p class="text-gray-400 text-xs sm:text-sm mb-4">التجمع الخامس، قسم أول القاهرة الجديدة • هاتف وواتساب: <span dir="ltr">01000984344</span></p>
@@ -530,11 +533,8 @@
                 <p class="text-gray-600 text-xs">© 2026 مراسي كافيه. جميع الحقوق محفوظة.</p>
             </div>
             
-            <!-- العمود الأيسر: الـ QR Code في منتصف المسافة اليمنى (أو يمين النص) وبحجم أكبر -->
-            <div class="flex flex-col items-center justify-center">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lolototomeme.github.io/MarasyCaffy/" alt="Menu QR Code" class="w-32 h-32 rounded-xl border-2 border-marasy-gold/50 bg-white p-1.5 shadow-lg">
-                <span class="text-xs text-gray-300 font-bold mt-2">امسح المنيو</span>
-            </div>
+            <!-- العمود الأيسر (الظاهر يسار الشاشة في RTL): فارغ لضبط التوازن -->
+            <div class="hidden md:block"></div>
 
         </div>
     </footer>
