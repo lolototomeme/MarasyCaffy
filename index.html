@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مراسي كافيه | Marasy Cafe - المنيو الرقمي والحجز[cite: 1]</title>
-    <!-- استدعاء مكتبة Tailwind CSS للتصميم العصري المتجاوب[cite: 1] -->
+    <title>مراسي كافيه | Marasy Cafe - المنيو الرقمي والفعاليات والحجز</title>
+    <!-- استدعاء مكتبة Tailwind CSS للتصميم العصري المتجاوب -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- استدعاء خط Cairo للغة العربية[cite: 1] -->
+    <!-- استدعاء خط Cairo للغة العربية -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- استدعاء أيقونات FontAwesome[cite: 1] -->
+    <!-- استدعاء أيقونات FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
@@ -44,13 +44,13 @@
             scrollbar-width: none;
         }
         .glass-nav {
-            background: rgba(11, 15, 25, 0.88);
+            background: rgba(11, 15, 25, 0.9);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
         .hero-bg {
             background: linear-gradient(to bottom, rgba(11, 15, 25, 0.65), rgba(11, 15, 25, 0.98)), 
-                        url('marasy-hero.jpg');
+                        url('vibe-1.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -58,8 +58,8 @@
 </head>
 <body class="bg-marasy-dark text-gray-100 font-sans antialiased selection:bg-marasy-gold selection:text-marasy-dark">
 
-    <!-- الهيدر والواجهة الرئيسية (Hero Section)[cite: 1] -->
-    <header class="hero-bg relative pt-10 pb-14 px-4 border-b border-marasy-border">
+    <!-- الهيدر والواجهة الرئيسية (Hero Section) -->
+    <header class="hero-bg relative pt-12 pb-16 px-4 border-b border-marasy-border">
         <div class="max-w-4xl mx-auto text-center">
             <div class="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-slate-900 to-black border-2 border-marasy-gold shadow-2xl mb-5 relative overflow-hidden">
                 <div class="text-center">
@@ -94,7 +94,7 @@
             </div>
 
             <div class="inline-flex flex-wrap justify-center gap-4 text-xs sm:text-sm text-gray-400 bg-black/40 px-4 py-2 rounded-full border border-white/10">
-                <span><i class="fa-regular fa-clock text-marasy-gold ml-1"></i> يومياً: 8:00 ص - 3:00 ص (الجمعة من 10:00 ص)</span>
+                <span><i class="fa-regular fa-clock text-marasy-gold ml-1"></i> يومياً: 8:00 ص - 3:00 ص</span>
                 <span class="hidden sm:inline">•</span>
                 <span><i class="fa-solid fa-wifi text-marasy-gold ml-1"></i> Wi-Fi مجاني</span>
                 <span class="hidden sm:inline">•</span>
@@ -103,10 +103,45 @@
         </div>
     </header>
 
-    <!-- شريط التنقل السريع المثبت[cite: 1] -->
-    <nav class="sticky top-0 z-40 glass-nav border-b border-marasy-border shadow-xl">
+    <!-- شريط التنقل الثابت بين الأقسام (Sticky Master Toolbar) -->
+    <nav class="sticky top-0 z-50 glass-nav border-b border-marasy-border shadow-2xl">
         <div class="max-w-6xl mx-auto px-3 py-3">
-            <div id="categoryTabs" class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar pb-1">
+            <div class="flex items-center justify-start lg:justify-center gap-2 overflow-x-auto no-scrollbar pb-1">
+                <a href="#menu-section" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-card hover:bg-slate-800 text-gray-200 border border-marasy-border transition shrink-0 flex items-center gap-1.5">
+                    <i class="fa-solid fa-utensils text-marasy-gold"></i> المنيو الرقمي
+                </a>
+                <a href="#gallery-section" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-card hover:bg-slate-800 text-gray-200 border border-marasy-border transition shrink-0 flex items-center gap-1.5">
+                    <i class="fa-solid fa-images text-marasy-gold"></i> المشروبات والأطباق
+                </a>
+                <a href="#vibes-section" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-card hover:bg-slate-800 text-gray-200 border border-marasy-border transition shrink-0 flex items-center gap-1.5">
+                    <i class="fa-solid fa-camera-retro text-marasy-gold"></i> أجواء الكافيه
+                </a>
+                <a href="#media-section" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-card hover:bg-slate-800 text-gray-200 border border-marasy-border transition shrink-0 flex items-center gap-1.5">
+                    <i class="fa-solid fa-video text-marasy-gold"></i> فيديوهات الحفلات
+                </a>
+                <a href="#reviews-section" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-card hover:bg-slate-800 text-gray-200 border border-marasy-border transition shrink-0 flex items-center gap-1.5">
+                    <i class="fa-solid fa-star text-marasy-gold"></i> آراء العملاء
+                </a>
+                <a href="#booking-section" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-red hover:bg-red-700 text-white transition shrink-0 flex items-center gap-1.5 shadow-lg">
+                    <i class="fa-regular fa-calendar-check"></i> حجز طاولة
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي للـقسام -->
+    <main class="max-w-5xl mx-auto px-4 py-8 space-y-20">
+        
+        <!-- 1. قسم المنيو الرقمي -->
+        <section id="menu-section" class="scroll-mt-24 pt-4">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold uppercase tracking-wider text-marasy-gold bg-marasy-gold/10 px-3 py-1 rounded-full">استكشف الأصناف والأسعار</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">المنيو الرقمي الشامل</h2>
+                <p class="text-gray-400 text-sm mt-1">تصفح أقسام المشروبات الساخنة والباردة، العصائر، الكريب، الباستا، البيتزا والحلويات</p>
+            </div>
+
+            <!-- تبويبات تصنيفات المنيو الفورية -->
+            <div id="categoryTabs" class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar pb-4 mb-6">
                 <button onclick="filterCategory('all')" data-cat="all" class="cat-btn active whitespace-nowrap px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-gold text-marasy-dark transition shrink-0">
                     الكل
                 </button>
@@ -126,85 +161,162 @@
                     🍝 الباستا
                 </button>
                 <button onclick="filterCategory('pizza')" data-cat="pizza" class="cat-btn whitespace-nowrap px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-card text-gray-300 hover:text-white border border-marasy-border transition shrink-0">
-                    🍕 البيتزا (M/L/XL)
+                    🍕 البيتزا
                 </button>
                 <button onclick="filterCategory('desserts')" data-cat="desserts" class="cat-btn whitespace-nowrap px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-marasy-card text-gray-300 hover:text-white border border-marasy-border transition shrink-0">
                     🍰 الحلويات
                 </button>
             </div>
-        </div>
-    </nav>
 
-    <!-- المحتوى الرئيسي للمنيو[cite: 1] -->
-    <main class="max-w-5xl mx-auto px-4 py-8">
-        
-        <div id="menuContainer" class="space-y-10"></div>
+            <div id="menuContainer" class="space-y-10"></div>
 
-        <div class="mt-12 bg-gradient-to-r from-amber-950/40 via-marasy-card to-amber-950/40 border border-marasy-gold/50 rounded-2xl p-5 sm:p-6 text-center shadow-lg">
-            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-marasy-gold/20 text-marasy-gold mb-2">
-                <i class="fa-solid fa-circle-info text-lg"></i>
+            <div class="mt-8 bg-gradient-to-r from-amber-950/40 via-marasy-card to-amber-950/40 border border-marasy-gold/50 rounded-2xl p-5 text-center shadow-lg">
+                <p class="text-marasy-goldLight font-bold text-sm leading-relaxed">
+                    ملاحظة هامة: الأسعار قابلة للتغيير، الرجاء الرجوع لإدارة الكافيه للتأكيد.
+                </p>
             </div>
-            <p class="text-marasy-goldLight font-bold text-sm sm:text-base leading-relaxed">
-                ملاحظة هامة: الأسعار قابلة للتغيير، الرجاء الرجوع لإدارة الكافيه للتأكيد.
-            </p>
-        </div>
-
-        <section id="booking-section" class="mt-14 bg-marasy-card border border-marasy-border rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-marasy-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
-            
-            <div class="text-center mb-6">
-                <span class="text-xs font-bold uppercase tracking-wider text-marasy-gold bg-marasy-gold/10 px-3 py-1 rounded-full">حجز سريع ومباشر</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">احجز طاولتك في مراسي كافيه</h2>
-                <p class="text-gray-400 text-sm mt-1">املأ البيانات التالية وسيتم توجيهك مباشرة إلى واتساب إدارة الكافيه لتأكيد الحجز</p>
-            </div>
-
-            <form id="whatsappBookingForm" onsubmit="sendWhatsAppBooking(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
-                <div>
-                    <label class="block text-xs font-bold text-gray-300 mb-1.5">الاسم بالكامل *</label>
-                    <input type="text" id="custName" required placeholder="مثال: أحمد محمود"
-                        class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-gray-300 mb-1.5">عدد الأفراد *</label>
-                    <select id="guestsCount" class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
-                        <option value="فردين (2)">فردين (2)</option>
-                        <option value="3 أفراد">3 أفراد</option>
-                        <option value="4 أفراد">4 أفراد</option>
-                        <option value="5 - 7 أفراد">5 - 7 أفراد</option>
-                        <option value="مجموعة كبيرة (+8 أفراد)">مجموعة كبيرة (+8 أفراد)</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-gray-300 mb-1.5">تاريخ الحجز *</label>
-                    <input type="date" id="bookingDate" required
-                        class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-gray-300 mb-1.5">الوقت المفضل *</label>
-                    <input type="time" id="bookingTime" required value="20:00"
-                        class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
-                </div>
-
-                <div class="sm:col-span-2">
-                    <label class="block text-xs font-bold text-gray-300 mb-1.5">مكان الجلسة / ملاحظات إضافية</label>
-                    <textarea id="bookingNotes" rows="2" placeholder="مثال: جلسة خارجية (Outdoor)، أو رووف توب، أو حجز بلايستيشن..."
-                        class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold"></textarea>
-                </div>
-
-                <div class="sm:col-span-2 mt-2">
-                    <button type="submit" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-slate-950 font-black py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-950/50 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base">
-                        <i class="fa-brands fa-whatsapp text-xl"></i>
-                        <span>إرسال طلب الحجز عبر الواتساب</span>
-                    </button>
-                </div>
-            </form>
         </section>
 
-        <!-- قسم آراء العملاء (Customer Reviews) -->
-        <section class="mt-16 pt-8 border-t border-marasy-border">
+        <!-- 2. قسم معرض الصور للمشروبات والماكولات -->
+        <section id="gallery-section" class="scroll-mt-24 pt-4 border-t border-marasy-border">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-marasy-gold bg-marasy-gold/10 px-3 py-1 rounded-full">تصوير حقيقي من الكافيه</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">معرض المشروبات والأطباق المميزة</h2>
+                <p class="text-gray-400 text-sm mt-1">تشكيلة مختارة من ألذ المشروبات والكوكتيلات والقهوة التي نقدمها يومياً</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-marasy-card border border-marasy-border rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="drink-1.jpg" alt="موهيتو وعصائر باردة" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base">موهيتو مراسي المنعش</h3>
+                        <p class="text-xs text-gray-400 mt-1">تشكيلة من الموهيتو والنكهات الفريش</p>
+                    </div>
+                </div>
+
+                <div class="bg-marasy-card border border-marasy-border rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="drink-2.jpg" alt="ميلك شيك طبقات" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base">ميلك شيك طبقات خاص</h3>
+                        <p class="text-xs text-gray-400 mt-1">مزيج غني بطبقات الشوكولاتة والفواكه</p>
+                    </div>
+                </div>
+
+                <div class="bg-marasy-card border border-marasy-border rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="drink-3.jpg" alt="آيس كوفي" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base">آيس كوفي مثلج</h3>
+                        <p class="text-xs text-gray-400 mt-1">انتعاش القهوة الباردة بأعلى جودة</p>
+                    </div>
+                </div>
+
+                <div class="bg-marasy-card border border-marasy-border rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="drink-4.jpg" alt="لاتيه وكوفي آرت" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base">لاتيه مع كوفي آرت</h3>
+                        <p class="text-xs text-gray-400 mt-1">قهوة مظبوطة برغوة غنية ولذيذة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. قسم أجواء الكافيه والزباين -->
+        <section id="vibes-section" class="scroll-mt-24 pt-4 border-t border-marasy-border">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-marasy-gold bg-marasy-gold/10 px-3 py-1 rounded-full">جلسات تروق الدم</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">أجواء مراسي كافيه والزوار</h2>
+                <p class="text-gray-400 text-sm mt-1">تعرف على ديكوراتنا، الجلسات الخارجية، والخدمة الاحترافية</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-marasy-card border border-marasy-border rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-56 overflow-hidden">
+                  <img src="vibe-1.gif" alt="الجلسات الخارجية" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+  </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base">جلسات Outdoor رايقة</h3>
+                        <p class="text-xs text-gray-400 mt-1">استمتع بالهواء الطلق والديكورات الدافئة</p>
+                    </div>
+                </div>
+
+                <div class="bg-marasy-card border border-marasy-border rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="vibe-2.jpg" alt="أجواء العملاء" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base">أحلى سهرات مع الأصحاب</h3>
+                        <p class="text-xs text-gray-400 mt-1">مكان مثالي للاجتماع وقضاء أوقات ممتعة</p>
+                    </div>
+                </div>
+
+                <div class="bg-marasy-card border border-marasy-border rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="barista.jpg" alt="الباريستا" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base">تحضير احترافي بعناية</h3>
+                        <p class="text-xs text-gray-400 mt-1">فريق عمل محترف لتحضير طلبك بأفضل شكل</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. قسم الفيديوهات والفعاليات (حفل تخرج وعيد ميلاد) -->
+        <section id="media-section" class="scroll-mt-24 pt-4 border-t border-marasy-border">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-marasy-gold bg-marasy-gold/10 px-3 py-1 rounded-full">ذكريات ولحظات سعيدة</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">فيديوهات الحفلات والفعاليات</h2>
+                <p class="text-gray-400 text-sm mt-1">لحظات حفل التخرج وأجواء أعياد الميلاد في مراسي كافيه</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- فيديو حفل التخرج (مباشر من Pexels) -->
+                <div class="bg-marasy-card border border-marasy-border rounded-3xl p-5 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-bold text-white text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-marasy-gold"></i> حفل تخرج مميز
+                            </h3>
+                            <span class="text-xs bg-marasy-gold/20 text-marasy-gold px-2.5 py-1 rounded-full font-bold">فيديو حصري</span>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm mb-4">أجواء الفرحة والاحتفال بتخرج الدفعة وسط أصدقائهم في الكافيه.</p>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden bg-black aspect-video relative flex items-center justify-center">
+                        <video controls autoplay muted loop playsinline class="w-full h-full object-cover">
+                            <source src="https://videos.pexels.com/video-files/7945884/7945884-hd_1080_1920_25fps.mp4" type="video/mp4">
+                            متصفحك لا يدعم عرض الفيديو.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- فيديو عيد الميلاد (يوتيوب Embed) -->
+                <div class="bg-marasy-card border border-marasy-border rounded-3xl p-5 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-bold text-white text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-cake-candles text-marasy-redLight"></i> حفلة عيد ميلاد
+                            </h3>
+                            <span class="text-xs bg-red-950/50 text-red-400 px-2.5 py-1 rounded-full font-bold">يوتيوب</span>
+                        </div>
+                        <p class="text-gray-300 text-xs sm:text-sm mb-4">احتفال لطيف ومبهج بعيد ميلاد أحد أصدقائنا في أجواء عائلية ممتعة.</p>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden bg-black aspect-video relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/oKYUQnQYGLg" title="حفل عيد ميلاد في مراسي كافيه" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. قسم آراء العملاء -->
+        <section id="reviews-section" class="scroll-mt-24 pt-4 border-t border-marasy-border">
             <div class="text-center mb-10">
                 <span class="text-xs font-bold uppercase tracking-wider text-marasy-gold bg-marasy-gold/10 px-3 py-1 rounded-full">آراء زبايننا الغاليين</span>
                 <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">إيه بيقولوا عن مراسي كافيه؟</h2>
@@ -216,11 +328,7 @@
                 <div class="bg-marasy-card border border-marasy-border rounded-2xl p-5 shadow-lg flex flex-col justify-between transition hover:border-marasy-gold/50">
                     <div>
                         <div class="flex items-center gap-1 text-marasy-gold mb-3 text-sm">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-300 text-sm leading-relaxed mb-4">
                             "المكان حقيقي تحفة، القاعدة هناك تروق الدم والرووف توب بالليل حكاية تانية خالص! والخدمة فوق الخيال والأجواء كلها طاقة إيجابية."
@@ -239,11 +347,7 @@
                 <div class="bg-marasy-card border border-marasy-border rounded-2xl p-5 shadow-lg flex flex-col justify-between transition hover:border-marasy-gold/50">
                     <div>
                         <div class="flex items-center gap-1 text-marasy-gold mb-3 text-sm">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-300 text-sm leading-relaxed mb-4">
                             "أحلى كافيه في التجمع بجد! الأجواء هناك مرحة ومبهجة، والقهوة المظبوطة مع قعدة البلايستيشن بتفصل الواحد عن أي ضغط ومشاكل."
@@ -262,11 +366,7 @@
                 <div class="bg-marasy-card border border-marasy-border rounded-2xl p-5 shadow-lg flex flex-col justify-between transition hover:border-marasy-gold/50">
                     <div>
                         <div class="flex items-center gap-1 text-marasy-gold mb-3 text-sm">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-300 text-sm leading-relaxed mb-4">
                             "رحت أنا وأصحابي وهناك قضينا أحلى سهرة، القعدة رايقة والناس لطيفة جداً، وكمان المشروبات فريش وطعمها يجنن، تسلم إيدكم."
@@ -285,11 +385,7 @@
                 <div class="bg-marasy-card border border-marasy-border rounded-2xl p-5 shadow-lg flex flex-col justify-between transition hover:border-marasy-gold/50">
                     <div>
                         <div class="flex items-center gap-1 text-marasy-gold mb-3 text-sm">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-300 text-sm leading-relaxed mb-4">
                             "المكان جوه مريح والنظافة والترتيب عالي أوي، والأجواء العامة تخليك عايز تقعد بالساعات من حلاوتها. المكان ده بقى المفضل ليا!"
@@ -308,11 +404,7 @@
                 <div class="bg-marasy-card border border-marasy-border rounded-2xl p-5 shadow-lg flex flex-col justify-between transition hover:border-marasy-gold/50">
                     <div>
                         <div class="flex items-center gap-1 text-marasy-gold mb-3 text-sm">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-300 text-sm leading-relaxed mb-4">
                             "من أجمل الكافيهات اللي زرتها، قعدت بره في الـ Outdoor والجو كان هايل والمزيج بين القعدة الرايقة والناس المحترمة حاجة تفتح النفس."
@@ -331,11 +423,7 @@
                 <div class="bg-marasy-card border border-marasy-border rounded-2xl p-5 shadow-lg flex flex-col justify-between transition hover:border-marasy-gold/50">
                     <div>
                         <div class="flex items-center gap-1 text-marasy-gold mb-3 text-sm">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-gray-300 text-sm leading-relaxed mb-4">
                             "الخدمة ممتازة والشباب هناك بشوشين جداً والأجواء كلها مرح وحيوية. البيتزا والكريب طعمهم حكاية، لينا قعدة تانية قريب إن شاء الله!"
@@ -352,9 +440,66 @@
             </div>
         </section>
 
+        <!-- 6. قسم حجز طاولة عبر الواتساب -->
+        <section id="booking-section" class="scroll-mt-24 pt-4 border-t border-marasy-border">
+            <div class="bg-marasy-card border border-marasy-border rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-marasy-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
+                
+                <div class="text-center mb-6">
+                    <span class="text-xs font-bold uppercase tracking-wider text-marasy-gold bg-marasy-gold/10 px-3 py-1 rounded-full">حجز سريع ومباشر</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">احجز طاولتك في مراسي كافيه</h2>
+                    <p class="text-gray-400 text-sm mt-1">املأ البيانات التالية وسيتم توجيهك مباشرة إلى واتساب إدارة الكافيه لتأكيد الحجز</p>
+                </div>
+
+                <form id="whatsappBookingForm" onsubmit="sendWhatsAppBooking(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1.5">الاسم بالكامل *</label>
+                        <input type="text" id="custName" required placeholder="مثال: أحمد محمود"
+                            class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1.5">عدد الأفراد *</label>
+                        <select id="guestsCount" class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
+                            <option value="فردين (2)">فردين (2)</option>
+                            <option value="3 أفراد">3 أفراد</option>
+                            <option value="4 أفراد">4 أفراد</option>
+                            <option value="5 - 7 أفراد">5 - 7 أفراد</option>
+                            <option value="مجموعة كبيرة (+8 أفراد)">مجموعة كبيرة (+8 أفراد)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1.5">تاريخ الحجز *</label>
+                        <input type="date" id="bookingDate" required
+                            class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1.5">الوقت المفضل *</label>
+                        <input type="time" id="bookingTime" required value="20:00"
+                            class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold">
+                    </div>
+
+                    <div class="sm:col-span-2">
+                        <label class="block text-xs font-bold text-gray-300 mb-1.5">مكان الجلسة / ملاحظات إضافية</label>
+                        <textarea id="bookingNotes" rows="2" placeholder="مثال: جلسة خارجية (Outdoor)، أو رووف توب، أو حجز بلايستيشن..."
+                            class="w-full bg-marasy-dark text-white rounded-xl p-3 text-sm border border-marasy-border focus:outline-none focus:border-marasy-gold"></textarea>
+                    </div>
+
+                    <div class="sm:col-span-2 mt-2">
+                        <button type="submit" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-slate-950 font-black py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-950/50 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>إرسال طلب الحجز عبر الواتساب</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
-    <!-- زر الواتساب العائم[cite: 1] -->
+    <!-- زر الواتساب العائم -->
     <a href="https://wa.me/201000984344?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%Bْب%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D9%85%D8%B1%D8%A7%D8%B3%D9%8A%20%D9%83%D8%A7%D9%81%D9%8A%D9%87%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B7%D8%A7%D9%88%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%20%D8%A7%D9%84%D9%85%D9%86%D9%8A%D9%88." 
        target="_blank" rel="noopener noreferrer"
        aria-label="تواصل عبر واتساب"
@@ -363,8 +508,8 @@
         <span class="text-sm">حجز واتساب</span>
     </a>
 
-    <!-- الفوتر[cite: 1] -->
-    <footer class="bg-black/60 border-t border-marasy-border mt-16 py-8 px-4 text-center">
+    <!-- الفوتر -->
+    <footer class="bg-black/80 border-t border-marasy-border mt-20 py-8 px-4 text-center">
         <div class="max-w-4xl mx-auto">
             <h3 class="text-marasy-gold font-bold text-lg mb-2">مراسي كافيه | Marasy Cafe</h3>
             <p class="text-gray-400 text-xs sm:text-sm mb-4">التجمع الخامس، قسم أول القاهرة الجديدة • هاتف وواتساب: <span dir="ltr">01000984344</span></p>
@@ -377,7 +522,7 @@
         </div>
     </footer>
 
-    <!-- قاعدة البيانات والبرمجة التفاعلية[cite: 1] -->
+    <!-- البرمجة التفاعلية وقاعدة البيانات -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const today = new Date().toISOString().split('T')[0];
